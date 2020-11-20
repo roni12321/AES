@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="528.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.GetReportsController">
+  <children>
+    <AnchorPane prefHeight="444.0" prefWidth="534.0">
+      <children>
+        <Text fill="#0066ff" layoutX="204.0" layoutY="55.0" scaleX="2.9929938488775205" scaleY="2.002447381302007" strokeType="OUTSIDE" strokeWidth="0.0" text="Reports Menu">
+          <font>
+            <Font name="System Bold" size="15.0" />
+          </font>
+        </Text>
+            <RadioButton fx:id="lecBtn" layoutX="46.0" layoutY="111.0" mnemonicParsing="false" onAction="#lecturerRadioBTN" selected="true" text="By Lecturers">
+               <toggleGroup>
+                  <ToggleGroup fx:id="G1" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="studBtn" layoutX="46.0" layoutY="294.0" mnemonicParsing="false" onAction="#studentRadionBTN" text="By Students" toggleGroup="$G1" />
+            <RadioButton fx:id="courseBtn" layoutX="46.0" layoutY="199.0" mnemonicParsing="false" onAction="#coursesRadioBTN" text="By Courses" toggleGroup="$G1" />
+            <ComboBox fx:id="lectCombo" layoutX="332.0" layoutY="103.0" prefWidth="150.0" promptText="Lecturers list" />
+            <ComboBox fx:id="studentCombo" layoutX="332.0" layoutY="286.0" prefWidth="150.0" promptText="Students list" />
+            <ComboBox fx:id="courseCombo" layoutX="332.0" layoutY="191.0" prefWidth="150.0" promptText="Courses list" />
+            <Button id="getReports" fx:id="BackBtn10" layoutX="40.0" layoutY="379.0" mnemonicParsing="false" onAction="#back" prefHeight="31.0" prefWidth="120.0" text="Back" textFill="#0029ff" />
+            <Button id="getReports" fx:id="showBTN" layoutX="341.0" layoutY="379.0" mnemonicParsing="false" onAction="#showBtnPressed" prefHeight="31.0" prefWidth="120.0" text="Show" textFill="#0029ff" />
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>
+

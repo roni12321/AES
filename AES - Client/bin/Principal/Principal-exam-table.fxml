@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.ExamTableController">
+   <children>
+      <TableView fx:id="ExamTable" prefHeight="430.0" prefWidth="663.0">
+        <columns>
+          <TableColumn fx:id="ExamId" prefWidth="332.0" text="Exam ID" />
+          <TableColumn fx:id="ExamAuthor" prefWidth="330.0" text="Exam Author" />
+        </columns>
+      </TableView>
+      <Button layoutX="99.0" layoutY="448.0" mnemonicParsing="false" onAction="#back" prefHeight="31.0" prefWidth="160.0" text="Back" />
+      <Button layoutX="390.0" layoutY="448.0" mnemonicParsing="false" onAction="#showExam" prefHeight="31.0" prefWidth="160.0" text="Show Exam" />
+   </children>
+</AnchorPane>
