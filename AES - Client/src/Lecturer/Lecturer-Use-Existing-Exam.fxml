@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="363.0" prefWidth="487.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lecturer.UseExistingController">
+  <children>
+    <AnchorPane layoutX="-3.0" layoutY="5.0" prefHeight="371.0" prefWidth="486.0">
+      <children>
+        <Text fill="#0066ff" layoutX="193.0" layoutY="42.0" scaleX="2.9929938488775205" scaleY="2.002447381302007" strokeType="OUTSIDE" strokeWidth="0.0" text="Use Existing Exam" wrappingWidth="96.53039965033531">
+          <font>
+            <Font name="System Bold" size="10.0" />
+          </font>
+        </Text>
+            <Button id="getReports" fx:id="ExistingExecuteCodeBtn" layoutX="297.0" layoutY="293.0" mnemonicParsing="false" onAction="#executionCode" prefHeight="31.0" prefWidth="171.0" text="Make Execution Code" textFill="#0029ff" />
+            <Button id="getReports" fx:id="BackBtn18" layoutX="37.0" layoutY="293.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="103.0" text="Back" textFill="#0029ff" />
+            <ComboBox fx:id="ExistingCourseCombo" layoutX="322.0" layoutY="95.0" onAction="#courseOnAction" prefWidth="150.0" promptText="Course" />
+            <Text layoutX="20.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select the course : " wrappingWidth="112.13671875">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="ExistingExamCombo" layoutX="322.0" layoutY="147.0" prefWidth="150.0" promptText="Exams" />
+            <Text layoutX="20.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exams List : " wrappingWidth="102.13671875">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Button fx:id="ExistingShowExam" layoutX="172.0" layoutY="227.0" mnemonicParsing="false" onAction="#showExam" prefHeight="25.0" prefWidth="103.0" text="Show Exam" textFill="#0029ff" />
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>

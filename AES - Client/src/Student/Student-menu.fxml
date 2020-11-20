@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="494.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Student.studentMenuController">
+  <children>
+    <AnchorPane prefHeight="481.0" prefWidth="505.0">
+      <children>
+        <Text fill="#0066ff" layoutX="189.0" layoutY="64.0" scaleX="2.9929938488775205" scaleY="2.002447381302007" strokeType="OUTSIDE" strokeWidth="0.0" text="Student's Menu">
+          <font>
+            <Font name="System Bold" size="15.0" />
+          </font>
+        </Text>
+        <Button id="getReports" fx:id="compExam" layoutX="25.0" layoutY="127.0" mnemonicParsing="false" onAction="#compExam" prefHeight="31.0" prefWidth="218.0" text="Take Computerized Exam" textFill="#0029ff" />
+        <ImageView blendMode="SRC_OVER" disable="false" fitHeight="215.0" fitWidth="215.0" focusTraversable="false" layoutX="283.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="true">
+          <effect>
+            <ColorAdjust brightness="0.1832061068702291" contrast="-0.06106870229007633" hue="-0.03053435114503822">
+              <input>
+                <Glow />
+              </input>
+            </ColorAdjust>
+          </effect>
+          <image>
+            <Image url="Images/student.png" />
+          </image>
+        </ImageView>
+        <Button id="getReports" fx:id="checkGrade" layoutX="25.0" layoutY="214.0" mnemonicParsing="false" onAction="#checkgrade" prefHeight="31.0" prefWidth="218.0" text="Check Grades">
+          <textFill>
+            <Color blue="1.000" green="0.161" red="0.000" fx:id="x1" />
+          </textFill>
+        </Button>
+        <Button id="getReports" fx:id="getExamCopy" layoutX="25.0" layoutY="259.0" mnemonicParsing="false" onAction="#getExamCopy" prefHeight="31.0" prefWidth="218.0" text="Get Exam Copy" textFill="$x1" />
+            <Button fx:id="manExam" layoutX="25.0" layoutY="172.0" mnemonicParsing="false" onAction="#manExam" prefHeight="31.0" prefWidth="218.0" text="Take Manual Exam">
+               <textFill>
+                  <Color blue="1.000" green="0.160" red="0.000" fx:id="x11" />
+               </textFill>
+            </Button>
+            <Hyperlink fx:id="linkLogout" layoutX="394.0" layoutY="404.0" onAction="#performLoggedOutHandler" text="Logout" />
+            <Text fx:id="UsernameTXT" layoutX="14.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PlaceHolder" wrappingWidth="175.10308837890625" />
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>

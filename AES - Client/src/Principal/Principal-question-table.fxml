@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="921.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.QuestionTableController">
+   <children>
+      <TableView fx:id="questionTable" layoutX="-1.0" layoutY="-3.0" prefHeight="499.0" prefWidth="921.0">
+        <columns>
+          <TableColumn fx:id="QuestionId" prefWidth="154.0" text="Question ID" />
+          <TableColumn fx:id="QuestionText" prefWidth="470.0" text="Question Text" />
+            <TableColumn fx:id="QuestionAuthor" prefWidth="292.0" text="Question Author " />
+        </columns>
+      </TableView>
+      <Button fx:id="backBtn" layoutX="340.0" layoutY="510.0" mnemonicParsing="false" onAction="#back" prefHeight="31.0" prefWidth="241.0" text="Back" />
+   </children>
+</AnchorPane>

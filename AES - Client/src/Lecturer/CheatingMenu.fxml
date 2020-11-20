@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lecturer.CheatCheckController">
+   <children>
+      <Text fill="#ae10e3" layoutX="167.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cheating Menu" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Text>
+      <Label layoutX="40.0" layoutY="112.0" text="Please select the course :" />
+      <ComboBox fx:id="courseCombo" layoutX="379.0" layoutY="107.0" onAction="#onCourseSelect" prefWidth="150.0" promptText="Courses" />
+      <Label layoutX="40.0" layoutY="179.0" text="Please select the exam :" />
+      <ComboBox fx:id="exmaCombo" layoutX="379.0" layoutY="174.0" onAction="#initStartBTN" prefWidth="150.0" promptText="exams" />
+      <Button fx:id="backBtn" layoutX="53.0" layoutY="341.0" mnemonicParsing="false" onAction="#back" prefHeight="31.0" prefWidth="112.0" text="back" />
+      <Button fx:id="startBtn" layoutX="433.0" layoutY="341.0" mnemonicParsing="false" onAction="#CheatCheck" prefHeight="31.0" prefWidth="112.0" text="Start check" />
+      <Label fx:id="allGoodLabel" layoutX="206.0" layoutY="217.0" text="All good" textFill="#a60ee8" underline="true" />
+      <Label fx:id="foundCheatLabel" layoutX="187.0" layoutY="217.0" text="Possible cheat" textFill="RED" underline="true" />
+      <Label layoutX="40.0" layoutY="217.0" text="Cheat check answer :" />
+      <TextArea fx:id="CheattxtArea" layoutX="40.0" layoutY="251.0" prefHeight="74.0" prefWidth="517.0" />
+   </children>
+</AnchorPane>
