@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="415.0" prefWidth="476.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lecturer.lecturerMenuController">
+  <children>
+    <AnchorPane layoutX="0.0" layoutY="0.0" prefHeight="409.0" prefWidth="483.0">
+      <children>
+        <Text fill="#0066ff" layoutX="189.0" layoutY="64.0" scaleX="2.9929938488775205" scaleY="2.002447381302007" strokeType="OUTSIDE" strokeWidth="0.0" text="Lecturer's Menu">
+          <font>
+            <Font name="System Bold" size="15.0" />
+          </font>
+        </Text>
+        <Button fx:id="buildExam" layoutX="25.0" layoutY="182.0" mnemonicParsing="false" onAction="#BuildExam" prefWidth="168.0" text="Build New Exam">
+          <textFill>
+            <Color blue="1.000" green="0.000" red="0.080" fx:id="x2" />
+          </textFill>
+        </Button>
+        <Button fx:id="checkExam" layoutX="25.0" layoutY="220.0" mnemonicParsing="false" onAction="#checkExam" prefWidth="168.0" text="Check Exam" textFill="#0048ff" />
+        <Button fx:id="getReports" layoutX="25.0" layoutY="258.0" mnemonicParsing="false" onAction="#reports" prefWidth="168.0" text="Get Reports" textFill="#4000ff" />
+        <Button id="BQuestions" fx:id="addQuestions" layoutX="25.0" layoutY="105.0" mnemonicParsing="false" onAction="#BuildQuestion" prefWidth="168.0" text="Build Questions" textFill="$x2" />
+        <ImageView blendMode="SRC_OVER" disable="false" fitHeight="215.0" fitWidth="215.0" focusTraversable="false" layoutX="272.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true" visible="true">
+          <effect>
+            <ColorAdjust brightness="0.1832061068702291" contrast="-0.06106870229007633" hue="-0.03053435114503822">
+              <input>
+                <Glow />
+              </input>
+            </ColorAdjust>
+          </effect>
+          <image>
+            <Image url="Images/lecturer.png" />
+          </image>
+        </ImageView>
+            <Button fx:id="ChangeExamTimeBtn" layoutX="25.0" layoutY="334.0" mnemonicParsing="false" onAction="#ExamTimeChange" prefWidth="168.0" text="Change Exam Time">
+               <textFill>
+                  <Color blue="1.000" green="0.160" red="0.000" fx:id="x11" />
+               </textFill>
+            </Button>
+            <Button id="BQuestions" fx:id="addExistingExam" layoutX="25.0" layoutY="144.0" mnemonicParsing="false" onAction="#Existing" prefWidth="168.0" text="Use an Existing Exam">
+               <textFill>
+                  <Color blue="1.000" green="0.000" red="0.080" fx:id="x21" />
+               </textFill>
+            </Button>
+            <Hyperlink layoutX="398.0" layoutY="366.0" onAction="#performLoggedOutHandler" text="Logout" />
+            <Text fx:id="UsernameTXT" layoutX="25.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PlaceHolder" />
+            <Button fx:id="CheatCheck" layoutX="25.0" layoutY="295.0" mnemonicParsing="false" onAction="#CheatCheck" prefHeight="31.0" prefWidth="168.0" text="Cheat Check" textFill="#1a00ff" />
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>

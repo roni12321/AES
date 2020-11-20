@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="593.0" prefWidth="590.0" style="-fx-background-color: E0E0E0;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.QuestionsController">
+  <children>
+    <ComboBox fx:id="ExamReviewQuestionCombo" layoutX="85.0" layoutY="117.0" prefHeight="31.0" prefWidth="389.0" promptText="Select Question" AnchorPane.leftAnchor="85.0" AnchorPane.rightAnchor="116.0" AnchorPane.topAnchor="117.0" />
+    <RadioButton id="Answer_1" fx:id="ExamReviewAnswer1" disable="true" layoutX="91.0" mnemonicParsing="false" text="Answer 1" AnchorPane.topAnchor="353.0">
+      <toggleGroup>
+        <ToggleGroup fx:id="G1" />
+      </toggleGroup>
+    </RadioButton>
+    <RadioButton id="Answer_2" fx:id="ExamReviewAnswer2" disable="true" layoutX="91.0" layoutY="384.0" mnemonicParsing="false" text="Answer 2" toggleGroup="$G1" />
+    <RadioButton id="Answer_3" fx:id="ExamReviewAnswer3" disable="true" layoutX="91.0" layoutY="415.0" mnemonicParsing="false" text="Answer 3" toggleGroup="$G1" />
+    <RadioButton id="Answer_4" fx:id="ExamReviewAnswer4" disable="true" layoutX="91.0" layoutY="446.0" mnemonicParsing="false" text="Answer 4" toggleGroup="$G1" />
+    <TextField fx:id="ExamQuestionField" editable="false" prefHeight="46.0" prefWidth="389.0" AnchorPane.leftAnchor="85.0" AnchorPane.rightAnchor="116.0" AnchorPane.topAnchor="196.0" />
+    <TextField fx:id="ExamReviewAuthorField" editable="false" prefHeight="31.0" prefWidth="209.0" AnchorPane.leftAnchor="85.0" AnchorPane.rightAnchor="296.0" AnchorPane.topAnchor="273.0" />
+    <Label layoutX="85.0" prefHeight="21.0" prefWidth="76.0" text="Question:" AnchorPane.topAnchor="175.0" />
+    <Label layoutX="84.0" prefHeight="21.0" prefWidth="76.0" text="Author:" AnchorPane.topAnchor="252.0" />
+    <Label layoutX="84.0" prefHeight="21.0" prefWidth="281.0" text="Answer (The correct Answer is Checked):" AnchorPane.topAnchor="324.0" />
+    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="81.0" prefWidth="486.0" text="Exam Review" textAlignment="CENTER" underline="true" AnchorPane.leftAnchor="64.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="22.0">
+      <font>
+        <Font size="42.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>

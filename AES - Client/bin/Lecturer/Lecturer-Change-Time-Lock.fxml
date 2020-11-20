@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="473.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lecturer.ExamTimeController">
+  <children>
+    <AnchorPane layoutX="-3.0" layoutY="5.0" prefHeight="523.0" prefWidth="476.0">
+      <children>
+        <Text fill="#0066ff" layoutX="173.0" layoutY="56.0" scaleX="2.9929938488775205" scaleY="2.002447381302007" strokeType="OUTSIDE" strokeWidth="0.0" text="Change Exam Time">
+          <font>
+            <Font name="System Bold" size="15.0" />
+          </font>
+        </Text>
+            <ComboBox fx:id="changeExamTimeCourseCombo" layoutX="317.0" layoutY="103.0" onAction="#getallExams" prefWidth="150.0" promptText="Course" />
+            <Text layoutX="39.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select the course" wrappingWidth="102.13671875">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="ChangeExamTimeExamButton" layoutX="317.0" layoutY="147.0" prefWidth="150.0" promptText="Exams" />
+            <Text layoutX="39.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select the exam" wrappingWidth="102.13671875">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="changeTimeMinutesField" layoutX="318.0" layoutY="204.0" prefHeight="31.0" prefWidth="150.0" promptText="Minutes" />
+            <RadioButton fx:id="addTimeRadio" layoutX="47.0" layoutY="208.0" mnemonicParsing="false" onAction="#changeExamTime" selected="true" text="How much time to add in minutes ?">
+               <toggleGroup>
+                  <ToggleGroup fx:id="G1" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="ChangeTimeLockExamRadio" layoutX="47.0" layoutY="253.0" mnemonicParsing="false" onAction="#lockRadioBtn" text="Lock the exam" toggleGroup="$G1" />
+            <TextField fx:id="TextAreaReason" alignment="TOP_LEFT" layoutX="47.0" layoutY="297.0" prefHeight="116.0" prefWidth="402.0" promptText="Write reasons for a change.." />
+            <Button fx:id="submitTime" layoutX="366.0" layoutY="456.0" mnemonicParsing="false" onAction="#submitOnAction" text="Submit" />
+      </children>
+    </AnchorPane>
+      <Button fx:id="backBtn14" layoutX="94.0" layoutY="459.0" mnemonicParsing="false" onAction="#back" text="Back" />
+  </children>
+</AnchorPane>
