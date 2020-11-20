@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="456.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Server.SystemServer">
+   <children>
+      <ImageView fitHeight="432.0" fitWidth="397.0" layoutX="177.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="Pics/ServerTransparent.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="117.0" fitWidth="96.0" layoutX="147.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="Pics/OnOff.png" />
+         </image>
+         </ImageView>
+      <ImageView fitHeight="117.0" fitWidth="111.0" layoutX="334.0" layoutY="342.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="Pics/Clear.png" />
+         </image></ImageView>
+      <Pane fx:id="paneDetails" layoutX="3.0" layoutY="70.0" prefHeight="151.0" prefWidth="382.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="161.0">
+         <children>
+            <TextField fx:id="txtPort" layoutX="98.0" layoutY="7.0" prefHeight="31.0" prefWidth="111.0" promptText="enter port to listen" text="5555" />
+            <Label layoutX="24.0" layoutY="12.0" text="Port:" />
+            <TextField fx:id="txtDb" layoutX="98.0" layoutY="43.0" prefHeight="31.0" prefWidth="111.0" promptText="enter database" text="project" />
+            <Label layoutX="22.0" layoutY="48.0" text="DataBase:" />
+            <Label layoutX="22.0" layoutY="120.0" text="Password:" />
+            <PasswordField fx:id="txtPass" layoutX="98.0" layoutY="115.0" prefHeight="31.0" prefWidth="111.0" promptText="enter the password here" text="root" />
+            <Label layoutX="23.0" layoutY="85.0" text="User:" />
+            <TextField fx:id="txtUser" layoutX="98.0" layoutY="80.0" prefHeight="31.0" prefWidth="111.0" promptText="insert user name" text="root" />
+         </children>
+      </Pane>
+      <Label alignment="CENTER" layoutX="8.0" layoutY="14.0" prefHeight="68.0" prefWidth="245.0" text="Server Interface" textAlignment="CENTER" underline="true" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="293.0">
+         <font>
+            <Font name="Comic Sans MS Bold" size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSubmit" layoutX="147.0" layoutY="320.0" mnemonicParsing="false" onAction="#onSubmitClicked" opacity="0.0" prefHeight="117.0" prefWidth="95.0" text="Start service" AnchorPane.bottomAnchor="22.0" />
+      <Button layoutX="341.0" layoutY="342.0" mnemonicParsing="false" onAction="#onClearClicked" opacity="0.0" prefHeight="87.0" prefWidth="81.0" text="Clear" AnchorPane.bottomAnchor="30.0" />
+      <TextArea fx:id="txtLog" layoutX="8.0" layoutY="221.0" prefHeight="87.0" prefWidth="530.0" AnchorPane.bottomAnchor="151.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" />
+      <Text layoutX="8.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Server IP:" />
+      <Text fx:id="IPTXT" layoutX="77.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="164.6708984375" />
+   </children>
+</AnchorPane>
